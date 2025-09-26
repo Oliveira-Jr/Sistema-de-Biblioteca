@@ -29,4 +29,4 @@ A aplicação tem como objetivo realizar a **gestão de livros, usuários e empr
 
 ## 🔧 Flexibilidade  
 
-Os livros implementam a interface `Emprestavel`, que define os comportamentos básicos de empréstimo e devolução, permitindo que futuramente outros tipos de itens (revistas, DVDs, etc.) possam ser integrados ao sistema de forma uniforme.  
+Os livros implementam a classe abstrata `Emprestavel`, que define os comportamentos e atributos básicos de empréstimo e devolução, permitindo que futuramente outros tipos de itens (revistas, DVDs, etc.) possam ser integrados ao sistema de forma uniforme.  
