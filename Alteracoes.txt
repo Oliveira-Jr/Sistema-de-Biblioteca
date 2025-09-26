@@ -1,0 +1,247 @@
+    --------Lugar para falar oq alterou em cada commit--------
+
+---Commit 3---
+
+    -Primeiro commit com codigo real
+
+    -Criei a classe biblioteca, onde fica salvo os livros e os usuarios
+
+    -Comecei a montar o metodo cadastrar leitor e adm
+
+    -Criei os metodos para cadastrar um livro novo, só podem ser chamados por administradores, o código passa pelas classes
+    Administrador e biblioteca onde vai criar e salvar o leitor
+
+    -Comecei o metodo mostrar acervo
+
+    -Criei o metodo de pegar livro emprestado, que é chamado pela biblioteca, onde pede os dados e confirma o leitor e livro,
+     e passa para dentro do Livro onde cria o emprestimo com datas atuais, depois emprestimo adiciona isso ao historico do leitor
+
+    Obs: emprestimo coloquei para quando a pessoa já pega, ent quando alguem pegar o livro reservado aí sim ele vira um emprestimo
+
+    Todo:
+        Fazer classe de reserva, metodo de mostrar acervo, criar cadastro de adm e leitor interativo, calcular multa,
+        criar metodo devolver em livro (chamada por leitor ou biblioteca //ver depois), gerenciarUsuario e gerarRelatorio
+        de Administrador.
+
+--Commit 4--
+
+    -Remoção de parâmetros da função de cadastrar e remover livro, que passava a propria biblioteca como parâmetro
+
+    Todo:
+        Fazer classe de reserva, metodo de mostrar acervo, criar cadastro de adm e leitor interativo, calcular multa,
+        criar metodo devolver em livro (chamada por leitor ou biblioteca //ver depois), gerenciarUsuario e gerarRelatorio
+        de Administrador.
+
+--Commit 5--
+
+    -Adição da função de mostrar o acervo
+
+    Todo:
+            Fazer classe de reserva, criar cadastro de adm e leitor interativo, calcular multa, criar metodo devolver em livro
+            (chamada por leitor ou biblioteca //ver depois), gerenciarUsuario e gerarRelatorio de Administrador.
+
+--Commit 6--
+
+    -Alteração do tipo de ID da classe Usuario, por consequencia alterei o modo de comparação dentro dos metodos removerLivro
+    e realizarEmprestimo
+
+    -Alteração do atributo idUnico(Livro) e id(Usuario) nos construtores, removi eles dos parametros e agora os valores de
+    id são gerados automaticamente pela variavel contadorId. No caso do idUnico(Livro) por ser uma String, adicionei uma
+    concatenação de Strings no proprio construtor
+
+    -Adicionei o atributo senha a classe/construtor Administarador
+
+    -Criei os metodos de cadastro de adm e leitor interativo(Confirmação de senha para Adm) -> podemos utilizar throw
+
+    -Criei metodo abstrato mostrarUsuario (temporario) -> para ficar mais visivel;
+
+    Obs: Precismos pensar sobre o Login dos usuarios na biblioteca e montar o switch case tip o "TAD";
+    Todo:
+                Fazer classe de reserva, calcular multa, criar metodo devolver em livro
+                (chamada por leitor ou biblioteca //ver depois), gerenciarUsuario e gerarRelatorio de Administrador,
+                analisar o incremento de arquivos txt para deixar usuarios/senhas/livros salvos e adidioncar mecanismos.
+                de try catch throw.
+
+
+--Commit 7.1--
+
+    -Adicionei a base da reserva na classe leitor, falta terminar
+
+    -Mudei o metodo fazerEmprestimo para Leitor, e tirei da biblioteca e Livro
+
+    -adicionei as funções de buscar leitor e livro na biblioteca
+
+    Todo:
+                    Terminar classe de reserva, calcular multa, criar metodo devolver em livro
+                    (chamada por leitor ou biblioteca //ver depois), gerenciarUsuario e gerarRelatorio de Administrador,
+                    analisar o incremento de arquivos txt para deixar usuarios/senhas/livros salvos e adidioncar mecanismos.
+                    de try catch throw.
+
+--Commit 8--
+
+    -Finalizei o metodo fazer reserva da clase Leitor
+
+    -Comecei o metodo de gerar Relatorio do Adm
+
+    Obs: Precisamos entrar em consenso do "TAD" da main, depois testa o metodo da reserva!
+
+    Todo:
+                    Terminar metodo gerarRelatorio Administrador, calcular multa, criar metodo devolver em livro
+                    (chamada por leitor ou biblioteca //ver depois), gerenciarUsuario,
+                    analisar o incremento de arquivos txt para deixar usuarios/senhas/livros salvos e adidioncar mecanismos.
+                    de try catch throw.
+
+--Commit 9--
+
+    -Finalizei metodo gerarRelatorio Administrador
+
+        Todo:
+                        calcular multa, criar metodo devolver em livro (chamada por leitor ou biblioteca //ver depois),
+                        gerenciarUsuario, analisar o incremento de arquivos txt para deixar usuarios/senhas/livros salvos
+                        e adidioncar mecanismos de try catch throw.
+
+--Commit 10--
+
+    -Terminei o metodo de pegarReserva
+
+    -fiz algumas alterações leves
+
+    -Agora o estado é alterado dentro do construtor
+
+    Todo:
+                            calcular multa, criar metodo devolver em livro (chamada por leitor), gerenciarUsuario,
+                            analisar o incremento de arquivos txt para deixar usuarios/senhas/livros salvos
+                            e adidioncar mecanismos de try catch throw.
+
+--Commit 11--
+
+    -Terminei devolverEmprestimo;
+
+    -Fiz calcular multa;
+
+    -Alterei o realizarEmprestimo para se adaptar o statusReserva;
+
+    Todo:
+                            gerenciarUsuario, criar cancelarEmprestimo(chamada por leitor), criar login,
+                            criar a main, testar tudo;
+
+--Commit 12.1--
+
+-Comecei a main, to terminando a parte de login do usuário
+
+-Falta a parte do adm
+
+ Todo:
+                            gerenciarUsuario, criar cancelarEmprestimo(chamada por leitor), criar login,
+                            terminar a main, testar tudo;
+
+
+--Commit 12.2--
+
+-Adicionei o login usuario e o metodo de comparar senha
+
+-Alterei os codigos de adm e leitor, sao diferentes
+
+-Praticamnete terminei a Main, falta adicionar o try e catch
+
+-Vou fazer no proximo commit:
+    atualizar codigo dos livros
+    mostrar acervo na reserva e emprestimo
+    mostrar dados reservas do usuario
+
+Todo:
+                            gerenciarUsuario, criar cancelarEmprestimo(chamada por leitor), criar login,
+                            terminar a main, testar tudo, corrigir relatorios (dados com erro) e diferenciar adm e leitor;
+
+--Commit 13--
+
+-Terminei o cancelarReserva
+
+-Alterei os id de Livro;
+
+-Testei os metodos de leitor na main
+
+-Vou fazer no proximo commit:
+    gerenciarUsuario;
+    conferir o metodo cancelarReserva;
+
+
+Todo:
+                            gerenciarUsuario, criar login, deixar pelos menos 1 leitor, 1 usuario, 1 livro ja salvos em
+                            memória, terminar a main, testar tudo, corrigir relatorios (dados com erro) e diferenciar adm e leitor;
+
+
+--Commit 14--
+
+-adicionei try/catch nos logins
+
+-alterei os ids da reserva e emprestimo
+
+-na devolução mostra os emprestimos e reservas
+
+-corrigi erros aleatórios que estavam acontecendo
+
+-confere se existe alguma reserva ou emprestimo antes de cancelar/devolver
+
+Todo:
+                            gerenciarUsuario, memória, testar tudo, conferir relatorios (dados com erro quando NULL)
+                            e diferenciar adm e leitor, corrigir calcular multa (cobra td vez)
+
+--Commit 15--
+
+-finalizei gerenciar usuario;
+
+-criei as funções dentro de biblioteca;
+
+-alterei o relatorio (conferir se o erro de dados NULL sumiu)
+
+
+Todo:
+                            testar tudo diferenciar adm e leitor no relatorio, corrigir calcular multa (cobra td vez)
+
+--Commit 15.2--
+
+-adicionei o gerenciarUsuario na main
+
+-alterei um erro do relatorio ao mostrar quantidade de emprestimos e relatorios
+
+Obs: As reservas do relatorio sao somente as ativas, por isso apliquei o stream.filter != Cancelada)
+O historico de Reserva puxa até as reservas canceladas, não sei se vale a pena remover a reserva
+do historico quando ela for cancelada!
+
+
+
+
+Todo:
+                            memória, testar tudo
+                            e diferenciar adm e leitor, corrigir calcular multa (cobra td vez)
+
+--Commit 16--
+
+-corrigi erros das novas funções da main
+
+-precisa testar mais e procurar erros
+
+Todo:
+                            testar e corrigir calcular multa (cobra td vez), testar TUDO
+
+--Commit 17--
+
+-alterei a interface Emprestavel para classe
+
+Todo:
+                            testar e corrigir calcular multa (cobra td vez), testar TUDO
+
+--Commit 18--
+
+-Consertei calcularMulta (Coloquei o ChronoUnity de volta por que o
+                          getDays so pega a diferença de dias dentro do mesmo mês)
+
+-Alterei removerLeitor
+
+-Criei uma função para inicializar alguns dados na biblioteca
+
+-Adicionei alguns detalhes de escrita
+
+Todo:
+                            TESTAR TUDO E ENVIAR
